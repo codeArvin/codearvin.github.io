@@ -1,0 +1,230 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="学习笔记, 前端记录, 思考整理"><title>Linux学习记录--常用命令简记 | 么么哒 | thinker</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/7.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Linux学习记录--常用命令简记</h1><a id="logo" href="/.">么么哒 | thinker</a><p class="description">学习笔记, 思考整理, 资源收集</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Linux学习记录--常用命令简记</h1><div class="post-meta">Mar 30, 2017<span> | </span><span class="category"><a href="/categories/学习记录/">学习记录</a></span><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><a data-disqus-identifier="2017/03/30/Linux学习记录--常用命令简记/" href="/2017/03/30/Linux学习记录--常用命令简记/#disqus_thread" class="disqus-comment-count"></a><div class="clear"><div id="toc" class="toc-article"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#日常使用命令记录"><span class="toc-number">1.</span> <span class="toc-text">日常使用命令记录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#快捷键命令"><span class="toc-number">2.</span> <span class="toc-text">快捷键命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#帮助命令"><span class="toc-number">3.</span> <span class="toc-text">帮助命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常用系统命令"><span class="toc-number">4.</span> <span class="toc-text">常用系统命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#系统状态检测命令"><span class="toc-number">5.</span> <span class="toc-text">系统状态检测命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#工作目录切换命令"><span class="toc-number">6.</span> <span class="toc-text">工作目录切换命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文本文件编辑命令"><span class="toc-number">7.</span> <span class="toc-text">文本文件编辑命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文件目录管理命令"><span class="toc-number">8.</span> <span class="toc-text">文件目录管理命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#用户与组管理命令"><span class="toc-number">9.</span> <span class="toc-text">用户与组管理命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#打包压缩文件民命令"><span class="toc-number">10.</span> <span class="toc-text">打包压缩文件民命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文件查询搜索命令"><span class="toc-number">11.</span> <span class="toc-text">文件查询搜索命令</span></a></li></ol></div></div><div class="post-content"><p>命令格式为: 命令名称 [命令参数] [命令对象]，之间以空格隔开。命令参数可以选用<strong>长格式</strong>(完整的选项名称)或者<strong>短格式</strong>(单个字母的缩写)，分别用<code>--</code>和<code>-</code>做前缀</p>
+<h3 id="日常使用命令记录"><a href="#日常使用命令记录" class="headerlink" title="日常使用命令记录"></a>日常使用命令记录</h3><p>1、使用关键字pkg搜索软件包: <code>sudo apt-cache search &lt;pkg&gt;</code><br>2、查看当前系统可用命令: <code>compgen -c</code><br>3、以名称查找某个文件: <code>sudo find &lt;目录&gt; -name &lt;文件名(可以使用正则，要用双引号包起来)&gt;</code></p>
+<h3 id="快捷键命令"><a href="#快捷键命令" class="headerlink" title="快捷键命令"></a>快捷键命令</h3><p>1、<code>alt + F4</code>: 关闭当前窗口<br>2、<code>alt + tab</code>: 窗口间切换，按<code>shift</code>反向移动<br>3、<code>alt + \``: 在同一个应用程序的不同窗口间切换
+4、</code>super + w<code>: 显示当前工作区所有窗口
+5、</code>ctrl + super + d<code>: 隐藏/显示桌面
+6、</code>ctrl + alt + l<code>: 锁定屏幕
+7、</code>ctrl + alt + <f1~f7><code>: 切换字符/图形界面，</code>F7`是图形，其他是字符</f1~f7></p>
+<h3 id="帮助命令"><a href="#帮助命令" class="headerlink" title="帮助命令"></a>帮助命令</h3><ol>
+<li><strong>man</strong>: <code>Manual pages</code><br>用man命令来查询陌生命令的可用参数和用法<br>有几个操作按钮:<ul>
+<li>/关键词: 从上至下搜索某个关键词</li>
+<li>?关键词: 从下至上搜索某个关键词</li>
+<li>q: 退出帮助文档</li>
+</ul>
+</li>
+</ol>
+<h3 id="常用系统命令"><a href="#常用系统命令" class="headerlink" title="常用系统命令"></a>常用系统命令</h3><ol>
+<li><p><strong>echo</strong><br>用来在终端显示字符串或者变量</p>
+</li>
+<li><p><strong>date</strong><br>按照指定格式显示系统时间或日期，需要键入+号开头的字符串指定其格式<br>简单的列出几个格式:</p>
+<ul>
+<li>%H: 小时(00-23)</li>
+<li>%l: 小时(01-12)</li>
+<li>%M: 分钟(00-59)</li>
+<li>%S: 秒(00-60)</li>
+<li>%X: 相当于%H:%M:%S</li>
+<li>%Z: 显示时区</li>
+<li>%Y: 完整的年份</li>
+<li>%B: 完整的月份(January-December)</li>
+<li>%b: 缩写的月份(Jan-Dec)</li>
+<li>%m: 月份(01-12)</li>
+<li>%d: 日(01-31)</li>
+</ul>
+</li>
+<li><p><strong>reboot</strong><br>重启，仅root用户可用</p>
+</li>
+<li><p><strong>wget</strong><br>使用命令行下载网络文件<br>wget [参数] 下载地址<br>参数:</p>
+<ul>
+<li>-b: 后台下载</li>
+<li>-O: 下载到指定目录</li>
+<li>-t: 最大尝试次数</li>
+<li>-c: 断点续传</li>
+<li>-p: 下载页面所有资源</li>
+<li>-r: 递归下载</li>
+</ul>
+</li>
+<li><p><strong>elinks</strong><br>一个纯文本界面的浏览器，格式为<br>elinks [参数] 网址</p>
+</li>
+</ol>
+<h3 id="系统状态检测命令"><a href="#系统状态检测命令" class="headerlink" title="系统状态检测命令"></a>系统状态检测命令</h3><ol>
+<li><p><strong>ifconfig</strong><br>获取网卡配置与网络状态等信息<br>ifconfig [网络设备] [参数]</p>
+</li>
+<li><p><strong>uname</strong><br>查看系统内核版本等信息<br>uname [-a]</p>
+</li>
+<li><p><strong>uptime</strong><br>查看系统负载情况<br>uptime<br>watch -n 1 uptime: 每秒刷新一次当前的系统负载情况</p>
+</li>
+<li><p><strong>free</strong><br>显示当前系统中内存的使用量情况<br>free [-m/-g] m g 为字节单位</p>
+</li>
+<li><p><strong>who</strong><br>查看当前登入主机的用户情况<br>who [参数]</p>
+</li>
+<li><p><strong>last</strong><br>查看所有的系统登陆记录<br>last [参数]</p>
+</li>
+<li><p><strong>history</strong><br>显示历史执行过的命令<br>history [-c] 默认保存1000条</p>
+</li>
+<li><p><strong>sosreport</strong><br>收集系统配置并诊断信息后输出结论文档</p>
+</li>
+</ol>
+<h3 id="工作目录切换命令"><a href="#工作目录切换命令" class="headerlink" title="工作目录切换命令"></a>工作目录切换命令</h3><ol>
+<li><p><strong>pwd</strong><br>显示当前工作目录<br>pwd [选项]<br>参数: -P 显示真实路径(即非快捷链接的地址)</p>
+</li>
+<li><p><strong>cd</strong><br>切换工作目录<br>cd [目录名称]<br>参数:</p>
+<ul>
+<li>- : 上一次的目录</li>
+<li>~ : 家目录</li>
+<li>~username: 其他用户的家目录</li>
+<li>.. : 上级目录</li>
+</ul>
+</li>
+<li><p><strong>ls</strong><br>查看当前目录有哪些文件<br>ls [选项] [文件]<br>参数:</p>
+<ul>
+<li>-a : 全部文件</li>
+<li>-d : 仅看目录本身</li>
+<li>-h : 易读的文件容量</li>
+<li>-l : 显示文件的详细信息</li>
+</ul>
+</li>
+</ol>
+<h3 id="文本文件编辑命令"><a href="#文本文件编辑命令" class="headerlink" title="文本文件编辑命令"></a>文本文件编辑命令</h3><ol>
+<li><p><strong>cat</strong><br>用于查看纯文本文件(较短的)<br>cat [选项] [文件]<br>参数:</p>
+<ul>
+<li>-n : 显示行号</li>
+<li>-b : 显示行号(不包括空行)</li>
+<li>-A : 显示出不可见的符号，空格、tab等</li>
+</ul>
+</li>
+<li><p><strong>more</strong><br>查看纯文本文件(较长的)<br>more [选项] [文件]<br>参数:</p>
+<ul>
+<li>-数字: 预先显示的行数</li>
+<li>-d: 显示提示语句和报错信息</li>
+</ul>
+</li>
+<li><p><strong>head</strong><br>查看纯文本文档的前N行<br>head [选项] [文件]<br>参数:</p>
+<ul>
+<li>-n 10 : 显示10行</li>
+<li>-n -10 : 正常输出，不显示后面10行</li>
+</ul>
+</li>
+<li><p><strong>tail</strong><br>查看纯文本文档的后N行<br>tail [选项] [文件]<br>参数:</p>
+<ul>
+<li>-n 10 : 显示后面10行</li>
+<li>-f : 持续刷新显示的内容</li>
+</ul>
+</li>
+<li><p><strong>od</strong><br>查看特殊格式的文件<br>od [选项] [文件]<br>参数:</p>
+<ul>
+<li>-t a : 默认字符</li>
+<li>-t c : ASCII字符</li>
+<li>-t o : 八进制</li>
+<li>-t d : 十进制</li>
+<li>-t x : 十六进制</li>
+<li>-t f : 浮点数</li>
+</ul>
+</li>
+<li><p><strong>tr</strong><br>转换文本文件中的字符<br>tr [原始字符] [目标字符]</p>
+</li>
+<li><p><strong>wc</strong><br>统计指定文本的行数、字数、字节数<br>wc [参数] 文本<br>参数:</p>
+<ul>
+<li>-l : 只显示行数</li>
+<li>-w : 只显示单词数</li>
+<li>-c : 只显示字节数</li>
+</ul>
+</li>
+<li><p><strong>cut</strong><br>通过列来提取文本字符<br>cut [参数] 文本<br>参数:</p>
+<ul>
+<li>-d 分隔符 : 指定分隔符，默认为tab</li>
+<li>-f : 指定显示的列数</li>
+<li>-c : 单位改为字符</li>
+</ul>
+</li>
+<li><p><strong>diff</strong><br>比较多个文本文件的差异<br>diff [参数] 文本<br>参数:</p>
+<ul>
+<li>-b : 忽略空格引起的差异</li>
+<li>-B : 忽略空行引起的差异</li>
+<li>-brief 或 -q : 仅报告是否存在差异</li>
+<li>-c : 使用上下文输出格式</li>
+</ul>
+</li>
+</ol>
+<h3 id="文件目录管理命令"><a href="#文件目录管理命令" class="headerlink" title="文件目录管理命令"></a>文件目录管理命令</h3><ol>
+<li><p><strong>touch</strong><br>创建空白文件与修改文件时间<br>touch [选项] [文件]<br>参数:</p>
+<ul>
+<li>-a : 修改访问时间(atime)</li>
+<li>-m : 修改更改时间(mtime)</li>
+<li>-d : 同时修改atime和mtime</li>
+<li>-t : 修改生成的时间</li>
+</ul>
+</li>
+<li><p><strong>mkdir</strong><br>创建空白的文件夹<br>mkdir [选项] 目录</p>
+</li>
+<li><p><strong>cp</strong><br>复制文件或目录<br>cp [选项] 源文件 目标文件<br>有三种情况:</p>
+<ul>
+<li>目标文件为一个目录，源文件复制进去</li>
+<li>目标文件为一个文件，覆盖掉</li>
+<li>目标文件不存在，复制一份源文件并以目标文件命名</li>
+</ul>
+</li>
+<li><p><strong>mv</strong><br>移动文件或改名<br>mv [选项] 文件名 [目标路径|目标文件名]</p>
+</li>
+<li><p><strong>rm</strong><br>删除文件或目录<br>rm [选项] 文件<br>参数:</p>
+<ul>
+<li>-f : 忽略警告信息</li>
+<li>-i : 删除前先询问</li>
+<li>-r : 删除文件夹</li>
+</ul>
+</li>
+<li><p><strong>dd</strong><br>指定大小的拷贝文件或指定转换文件<br>dd [参数]</p>
+</li>
+</ol>
+<h3 id="用户与组管理命令"><a href="#用户与组管理命令" class="headerlink" title="用户与组管理命令"></a>用户与组管理命令</h3><ol>
+<li><p><strong>useradd</strong><br>创建新的用户<br>useradd [选项] 用户名</p>
+</li>
+<li><p><strong>passwd</strong><br>修改用户密码<br>passwd [选项] 用户名</p>
+</li>
+<li><p><strong>userdel</strong><br>删除用户所有表格<br>userdel [选项] 用户名</p>
+</li>
+<li><p><strong>usermod</strong><br>修改用户属性<br>usermod [选项] 用户名</p>
+</li>
+<li><p><strong>groupadd</strong><br>创建群组<br>groupadd [选项] 群组名</p>
+</li>
+</ol>
+<h3 id="打包压缩文件民命令"><a href="#打包压缩文件民命令" class="headerlink" title="打包压缩文件民命令"></a>打包压缩文件民命令</h3><ol>
+<li><strong>tar</strong><br>打包压缩或解压<br>tar [选项] 文件</li>
+</ol>
+<h3 id="文件查询搜索命令"><a href="#文件查询搜索命令" class="headerlink" title="文件查询搜索命令"></a>文件查询搜索命令</h3><ol>
+<li><p><strong>grep</strong><br>对文本进行搜索<br>grep [选项] 文件</p>
+</li>
+<li><p><strong>find</strong><br>find [查找路径] 寻找条件 操作</p>
+</li>
+</ol>
+</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="https://codearvin.github.io/2017/03/30/Linux学习记录--常用命令简记/" data-id="cj9sodpk7000n2y6v03m9f0v1" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACr0lEQVR42u3aQW7cMAwF0Ln/padAVwUSuZ+kmE6Bp9Ugdmw9LUzhU69XPN6/x9e//DlO959+n65+vef0v9cGHh4eXmvqp/H84ud7nqdbBZye/LzQeHh4eHu8+eOSySXg5yKUzxkPDw/vE3i9ApAUm/nWHA8PD+/zecmdyce9t+HGw8PD+wRedbucl428tCSzWsxa8PDw8GLe5KP8r34v9vfw8PDwBl31JCaYbJTzctIbeHh4eBu8ZKKTIpHge0cWkrADDw8Pb4OXwPJY4da2OFmC6C14eHh4C7zkqFMvtuiFttXNd6GQ4OHh4S3w8hcnH+h5JDFZIDw8PLw9XjW0zcHVAtBrdEVlAA8PD2+Nl1+9tTnO22BJyflLfw8PDw/vEu8nm1t5AcjLTLJ8eHh4eNu8XvtqUmB6zxwF0Hh4eHgDXq/BfyuqqDa08jAXDw8Pb483LwbVgDVvp00abHh4eHh7vF57vneYNS8GyWJFgQgeHh7eAi//ZI+2s60FuhwQ4+Hh4V3i5aFDtZ2fR7fvYPQKBh4eHt4eL/9M5zFBbwluNdLw8PDw9njVEHbjeEEeMUziYzw8PLy7vN72dx5YVI8gNINjPDw8vAXe/PXVTfbzmC/B5Ufj4eHhBZvjJD7oRQzV7XIvCvmm7uHh4eFd4iWx6eSr22t64eHh4f0vvEltiepPfFiqGjcc54+Hh4e3wKuGob3tdfU4VzXCeJ4nHh4e3l3euziqB0+rR6MmBwu+eTIeHh7eAq/alOq1+edHDfI2W6/lhoeHh1fl9dpa1fZ/XnKqhWE0FTw8PLwBbx4Z5OWhevVVHMeTEXh4eHg/zssPEyQf8UlsUZghHh4e3ofxJlFC7xhWdWnw8PDw9nh3w4jJ5rjHPi40Hh4e3gLv7ivnBw56Ie9o4OHh4aW8X8WUc6hSxiRLAAAAAElFTkSuQmCC" class="article-share-link">分享</a><div class="tags"><a href="/tags/Linux/">Linux</a><a href="/tags/后端/">后端</a></div><div class="post-nav"><a href="/2017/04/09/Linux学习记录--有趣的linux命令/" class="pre">Linux学习记录--有趣的linux命令</a><a href="/2017/03/29/《学习JavaScript数据结构与算法》读书笔记--队列/" class="next">《学习JavaScript数据结构与算法》读书笔记--队列</a></div><div id="disqus_thread"><div class="btn_click_load"><button class="disqus_click_btn">阅读评论 「请确保 disqus.com 可以正常加载」</button></div><script>var disqus_shortname = 'codearvin';
+var disqus_identifier = '2017/03/30/Linux学习记录--常用命令简记/';
+var disqus_title = 'Linux学习记录--常用命令简记';
+var disqus_url = 'https://codearvin.github.io/2017/03/30/Linux学习记录--常用命令简记/';
+$('.btn_click_load').click(function() {
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+  $('.btn_click_load').css('display','none');
+});
+$.ajax({
+  url: 'https://disqus.com/next/config.json',
+  timeout: 3000,
+  type: 'GET',
+  success: (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    $('.btn_click_load').css('display','none');
+  })(),
+  error: function() {
+    $('.btn_click_load').css('display','block');
+  }
+});</script><script id="dsq-count-scr" src="//codearvin.disqus.com/count.js" async></script></div></div></div></div><div class="pure-u-1 pure-u-md-1-4"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Show/">Show</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/学习记录/">学习记录</a><span class="category-list-count">18</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂物间/">杂物间</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/读书笔记/">读书笔记</a><span class="category-list-count">9</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/Linux/" style="font-size: 15px;">Linux</a> <a href="/tags/FCC/" style="font-size: 15px;">FCC</a> <a href="/tags/demo/" style="font-size: 15px;">demo</a> <a href="/tags/Atom/" style="font-size: 15px;">Atom</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/IFE/" style="font-size: 15px;">IFE</a> <a href="/tags/CSS/" style="font-size: 15px;">CSS</a> <a href="/tags/JS/" style="font-size: 15px;">JS</a> <a href="/tags/DOM/" style="font-size: 15px;">DOM</a> <a href="/tags/前端/" style="font-size: 15px;">前端</a> <a href="/tags/后端/" style="font-size: 15px;">后端</a> <a href="/tags/杂物间/" style="font-size: 15px;">杂物间</a> <a href="/tags/数据结构/" style="font-size: 15px;">数据结构</a> <a href="/tags/算法/" style="font-size: 15px;">算法</a> <a href="/tags/《学习JavaScript数据结构与算法》/" style="font-size: 15px;">《学习JavaScript数据结构与算法》</a> <a href="/tags/读书笔记/" style="font-size: 15px;">读书笔记</a> <a href="/tags/code/" style="font-size: 15px;">code</a> <a href="/tags/命令行/" style="font-size: 15px;">命令行</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/11/08/Mac 使用记录/">Mac 使用记录</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/30/Hexo 配置记录/">Hexo 配置记录</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/09/《学习JavaScript数据结构与算法》读书笔记--算法补充知识/">《学习JavaScript数据结构与算法》读书笔记--算法补充知识</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/09/《学习JavaScript数据结构与算法》读书笔记--排序和搜索算法/">《学习JavaScript数据结构与算法》读书笔记--排序和搜索算法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/09/《学习JavaScript数据结构与算法》读书笔记--图/">《学习JavaScript数据结构与算法》读书笔记--图</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/09/《学习JavaScript数据结构与算法》读书笔记--树/">《学习JavaScript数据结构与算法》读书笔记--树</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/09/《学习JavaScript数据结构与算法》读书笔记--集合、字典、散列/">《学习JavaScript数据结构与算法》读书笔记--集合、字典、散列</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/20/《学习JavaScript数据结构与算法》读书笔记--链表/">《学习JavaScript数据结构与算法》读书笔记--链表</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/20/life-game/">life-game</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/11/常用命令行命令/">常用命令行命令</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//codearvin.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2017 <a href="/." rel="nofollow">么么哒 | thinker.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css"><script type="text/javascript" src="/js/search.js?v=0.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+   search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="学习笔记, 前端记录, 思考整理"><title>JavaScript操作DOM常用API总结 | 么么哒 | thinker</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/7.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">JavaScript操作DOM常用API总结</h1><a id="logo" href="/.">么么哒 | thinker</a><p class="description">学习笔记, 思考整理, 资源收集</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">JavaScript操作DOM常用API总结</h1><div class="post-meta">Mar 28, 2017<span> | </span><span class="category"><a href="/categories/学习记录/">学习记录</a></span><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><a data-disqus-identifier="2017/03/28/JavaScript操作DOM常用API总结/" href="/2017/03/28/JavaScript操作DOM常用API总结/#disqus_thread" class="disqus-comment-count"></a><div class="clear"><div id="toc" class="toc-article"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#基本概念"><span class="toc-number">1.</span> <span class="toc-text">基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#API"><span class="toc-number">2.</span> <span class="toc-text">API</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#节点创建型API"><span class="toc-number">2.1.</span> <span class="toc-text">节点创建型API</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#页面修改型API"><span class="toc-number">2.2.</span> <span class="toc-text">页面修改型API</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#节点查询型API"><span class="toc-number">2.3.</span> <span class="toc-text">节点查询型API</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#节点关系型API"><span class="toc-number">2.4.</span> <span class="toc-text">节点关系型API</span></a></li></ol></li></ol></div></div><div class="post-content"><p>原文地址:<a href="http://www.imooc.com/article/2562" target="_blank" rel="external">http://www.imooc.com/article/2562</a></p>
+<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>1、Node类型:</p>
+<ul>
+<li>JS中所有节点都继承自Node类型，都共享着相同的基本属性和方法</li>
+<li>Node有一个属性<code>nodeType</code>表示Node的类型，是一个整数</li>
+<li>我们最常用的就是<code>element</code>、<code>text</code>、<code>attribute</code>、<code>comment</code>、<code>document</code>、<code>document_fragment</code></li>
+</ul>
+<p>2、<code>HTMLCollection</code>和<code>NodeList</code>的区别:</p>
+<ul>
+<li><code>HTMLCollection</code>是元素集合，<code>NodeList</code>是节点集合(即可以包含元素，也可以包含文本节点)</li>
+<li>相同点:<ul>
+<li>都是类数组对象，有length属性</li>
+<li>都是只读的</li>
+<li>都是实时的，有个例外就是<code>querySelectorAll</code>返回的NodeList不是实时的</li>
+<li>都有item()方法，通过index或id获取元素</li>
+<li>都可以通过属性的方式访问元素</li>
+</ul>
+</li>
+<li>不同点:<ul>
+<li><code>HTMLCollection</code>对象有namedItem()方法，可以传递id或name来获取元素</li>
+<li><code>HTMLCollection</code>的item方法还有通过属性获取元素可以支持id和name，而<code>NodeList</code>只支持id</li>
+</ul>
+</li>
+</ul>
+<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><h3 id="节点创建型API"><a href="#节点创建型API" class="headerlink" title="节点创建型API"></a>节点创建型API</h3><p>1、<code>document.createElement(tagName)</code><br>2、<code>document.createTextNode(text)</code><br>3、<code>node.cloneNode(bool)</code>: 接收一个boll参数，表示是否复制子元素</p>
+<ul>
+<li>bool值最好传入</li>
+<li>通过<code>addEventListener</code>或<code>onclick</code>进行绑定，克隆副本不会绑定该事件，如果是内联绑定克隆节点会绑定该事件<br>4、<code>document.createDocumentFragment()</code>: 创建一个<code>documentFragment</code>，作用主要用于储存临时的节点准备添加到文档中</li>
+</ul>
+<p>总结:</p>
+<ul>
+<li>创建的节点是孤立的，要通过appendChild等方法添加到文档中</li>
+<li>cloneNode要注意被复制的节点是否包含子节点和事件绑定问题</li>
+<li>createDocumentFragment用来解决添加大量节点时的性能问题</li>
+</ul>
+<h3 id="页面修改型API"><a href="#页面修改型API" class="headerlink" title="页面修改型API"></a>页面修改型API</h3><p>1、<code>parent.appendChild(child)</code>:</p>
+<ul>
+<li>添加节点会作为父节点的最后一个子节点</li>
+<li>如果被添加的节点在页面中存在，则执行后这个节点会添加到指定位置，原本位置会移除该节点</li>
+</ul>
+<p>2、<code>parent.insertBefore(newNode, child)</code>: 如果第二个参数为<code>undefined</code>或<code>null</code>则会添加到末尾<br>3、<code>parent.removeChild(node)</code><br>4、<code>parent.replaceChild(newChild, oldChild)</code></p>
+<h3 id="节点查询型API"><a href="#节点查询型API" class="headerlink" title="节点查询型API"></a>节点查询型API</h3><p>1、<code>document.getElementById(id)</code>: 只查找存在于文档中的元素，如果有多个元素id相同，返回第一个<br>2、<code>document.getElementsByTagName(tagName)</code>:</p>
+<ul>
+<li>返回一个即时的HTMLCollection类型,即该集合内部的元素会随着你添加删除等操作随时变化</li>
+<li>如果没有找到，返回一个空的HTMLCollection</li>
+<li><code>*</code>表示所有标签</li>
+</ul>
+<p>3、<code>document.getElementsByName</code>:</p>
+<ul>
+<li>返回一个即时的Nodelist对象，随时变化</li>
+<li>html中并不是所有元素都有name属性，比如div，但如果设置也是可以被查到的</li>
+<li>在IE中，如果id设置成某个值，传入该函数的参数与id值相同，也可以被找到</li>
+</ul>
+<p>4、<code>document.getElementsByClassName(classNames)</code>:</p>
+<ul>
+<li>返回一个即时的HTMLCollection</li>
+<li>如果获取两个以上的classname，可以传入多个，用空格分隔</li>
+</ul>
+<p>5、<code>document.querySelector</code>:</p>
+<ul>
+<li>通过css选择器查找元素，返回第一个匹配的元素，没有匹配返回null。</li>
+<li>算法使用的是<strong>深度优先搜索</strong>来获取元素</li>
+</ul>
+<p>6、<code>document.querySelector</code>:</p>
+<ul>
+<li>和上面方法一样，不同的是返回所有匹配的元素，可以匹配多个选择符</li>
+<li>搜索方式也是深度优先搜索。</li>
+<li>返回的是非即时的NodeList</li>
+</ul>
+<h3 id="节点关系型API"><a href="#节点关系型API" class="headerlink" title="节点关系型API"></a>节点关系型API</h3><p>1、父关系型:</p>
+<ul>
+<li>parentNode: 表示元素的父节点</li>
+<li>parentElement: 返回元素的父元素节点，父节点如果不是element，返回null</li>
+</ul>
+<p>2、兄弟关系型:</p>
+<ul>
+<li>previousSibling: 节点的前一个节点<ul>
+<li>如果该节点是第一个节点，返回null</li>
+<li>注意有可能拿到的是文本节点或注释节点，要进行处理</li>
+</ul>
+</li>
+<li>previousElementSibling: 返回前一个<strong>元素</strong>节点</li>
+<li>nextSibling: 节点的后一个节点<ul>
+<li>如果该节点是最后一个节点，返回null</li>
+<li>注意有可能拿到的是文本节点或注释节点，要进行处理</li>
+</ul>
+</li>
+<li>nextElementSibling: 返回一个元素节点</li>
+</ul>
+<p>3、子关系型:</p>
+<ul>
+<li>childNodes: 返回一个即时的NodeList，表示子元素的子节点列表</li>
+<li>children: 一个即时的HTMLCollection，子节点都是element</li>
+<li>firstNode: 第一个子节点</li>
+<li>lastNode: 最后一个子节点</li>
+<li>hasChildNodes: 判断是否包含子节点</li>
+</ul>
+<p>4、元素属性型:</p>
+<ul>
+<li>element.setAttribute(name, value): 根据名称和值修改元素的特性</li>
+<li>element.getAttribute(name): 返回特性名相应的值，没有返回null或空字符串</li>
+</ul>
+<p>5、元素样式型:</p>
+<ul>
+<li>window.getComputedStyle(element, pseudoElt):<ul>
+<li>获得元素计算后的样式</li>
+<li>返回一个CSSStyleDecaration对象</li>
+</ul>
+</li>
+<li>element.getBoundingClientRect():<ul>
+<li>clientRect是一个DOMRect对象，包含<code>left</code>、<code>top</code>、<code>bottom</code>、<code>right</code>，是相对于可视窗口的距离，滚动距离发生改变时，他们的值会发生改变</li>
+</ul>
+</li>
+</ul>
+</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="https://codearvin.github.io/2017/03/28/JavaScript操作DOM常用API总结/" data-id="cj9sodpjx000e2y6vqyhx5v2d" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACrklEQVR42u3aQW7kMAwEwPz/09lrgOw43aS0kwVKp4HHkFU+SDTJj494fH4ZX6+8+vf79eeRzPl9/mMDDw8Pb7H05wcny3o1//Pv9inJmvHw8PBu8/Jl5dv082tqD4D2Hjw8PLzfxqs36HjO5/nx8PDw/l9eu8VvAuu3nXt4eHh4j7w2ETAj7cEXcy14eHh4XawbVZF+z+8r9T08PDy8dVU9Ty7MNujkzvww+MvT8fDw8C7wNunUJMzdN2zlL+LlnXh4eHiXeW1zVQ5un7VpZcDDw8P7N7y8NepUM9Zs08+v4+Hh4d3gtdv6rDVqn3Roc7N4eHh493j7WtKsTNUG6214jYeHh3eP93l07BMHeVgfJZfx8PDwLvDyz/5ZoSun7g+e4vTDw8PDW/Paj//Z5r4pniWJjKgAhoeHh7fm5WWtfFl5aW12GOStCXh4eHj3eEkwPXsRZ+v4dfoDDw8P7wIvD1LbO/Mk7Kzctarp4eHh4S14s9B2f2UDSAJ0PDw8vPfy8pRuW8KvS/5BuavojMDDw8Mb8c72drYNBJtDqE6L4OHh4R3itWFu3kQ1W+4mm4KHh4f3Ll5+niSMpJyWv6ZhGI2Hh4d3lNcW5vN/96mKWfvCyznx8PDwrvFmzQGzxESe4Gg/A4qvBzw8PLwRL5m6LYltEhwJqThm8PDw8K7xZhPloXay3Dz9UQTreHh4eNd4ebGq/dKfJWejfodkTjw8PLyjvE1b1SZBMAvQ63/x8PDwLvDalqZZmjVvtDrV+FUPPDw8vJI3OwzapWxKZauDAQ8PD+8a79Sm3DZItYmPOmGBh4eH95/w9k0GsxJa3U2Gh4eH91ZeHv4mS98nl/Hw8PBu89rmqqTVYJbYbZsYfniVeHh4eBd47Qd/3ijQ3jlLQByr7+Hh4eH9vJ4/DsyIvcVnMbIAAAAASUVORK5CYII=" class="article-share-link">分享</a><div class="tags"><a href="/tags/前端/">前端</a><a href="/tags/JS/">JS</a><a href="/tags/DOM/">DOM</a></div><div class="post-nav"><a href="/2017/03/28/《学习JavaScript数据结构与算法》读书笔记--栈/" class="pre">《学习JavaScript数据结构与算法》读书笔记--栈</a><a href="/2017/03/25/《学习JavaScript数据结构与算法》读书笔记--数组/" class="next">《学习JavaScript数据结构与算法》读书笔记--数组</a></div><div id="disqus_thread"><div class="btn_click_load"><button class="disqus_click_btn">阅读评论 「请确保 disqus.com 可以正常加载」</button></div><script>var disqus_shortname = 'codearvin';
+var disqus_identifier = '2017/03/28/JavaScript操作DOM常用API总结/';
+var disqus_title = 'JavaScript操作DOM常用API总结';
+var disqus_url = 'https://codearvin.github.io/2017/03/28/JavaScript操作DOM常用API总结/';
+$('.btn_click_load').click(function() {
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+  $('.btn_click_load').css('display','none');
+});
+$.ajax({
+  url: 'https://disqus.com/next/config.json',
+  timeout: 3000,
+  type: 'GET',
+  success: (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    $('.btn_click_load').css('display','none');
+  })(),
+  error: function() {
+    $('.btn_click_load').css('display','block');
+  }
+});</script><script id="dsq-count-scr" src="//codearvin.disqus.com/count.js" async></script></div></div></div></div><div class="pure-u-1 pure-u-md-1-4"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Show/">Show</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/学习记录/">学习记录</a><span class="category-list-count">18</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂物间/">杂物间</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/读书笔记/">读书笔记</a><span class="category-list-count">9</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/Linux/" style="font-size: 15px;">Linux</a> <a href="/tags/FCC/" style="font-size: 15px;">FCC</a> <a href="/tags/demo/" style="font-size: 15px;">demo</a> <a href="/tags/Atom/" style="font-size: 15px;">Atom</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/IFE/" style="font-size: 15px;">IFE</a> <a href="/tags/CSS/" style="font-size: 15px;">CSS</a> <a href="/tags/JS/" style="font-size: 15px;">JS</a> <a href="/tags/DOM/" style="font-size: 15px;">DOM</a> <a href="/tags/前端/" style="font-size: 15px;">前端</a> <a href="/tags/后端/" style="font-size: 15px;">后端</a> <a href="/tags/杂物间/" style="font-size: 15px;">杂物间</a> <a href="/tags/数据结构/" style="font-size: 15px;">数据结构</a> <a href="/tags/算法/" style="font-size: 15px;">算法</a> <a href="/tags/《学习JavaScript数据结构与算法》/" style="font-size: 15px;">《学习JavaScript数据结构与算法》</a> <a href="/tags/读书笔记/" style="font-size: 15px;">读书笔记</a> <a href="/tags/code/" style="font-size: 15px;">code</a> <a href="/tags/命令行/" style="font-size: 15px;">命令行</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/11/08/Mac 使用记录/">Mac 使用记录</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/30/Hexo 配置记录/">Hexo 配置记录</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/09/《学习JavaScript数据结构与算法》读书笔记--算法补充知识/">《学习JavaScript数据结构与算法》读书笔记--算法补充知识</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/09/《学习JavaScript数据结构与算法》读书笔记--排序和搜索算法/">《学习JavaScript数据结构与算法》读书笔记--排序和搜索算法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/09/《学习JavaScript数据结构与算法》读书笔记--图/">《学习JavaScript数据结构与算法》读书笔记--图</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/09/《学习JavaScript数据结构与算法》读书笔记--树/">《学习JavaScript数据结构与算法》读书笔记--树</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/09/《学习JavaScript数据结构与算法》读书笔记--集合、字典、散列/">《学习JavaScript数据结构与算法》读书笔记--集合、字典、散列</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/20/《学习JavaScript数据结构与算法》读书笔记--链表/">《学习JavaScript数据结构与算法》读书笔记--链表</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/20/life-game/">life-game</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/11/常用命令行命令/">常用命令行命令</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//codearvin.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2017 <a href="/." rel="nofollow">么么哒 | thinker.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css"><script type="text/javascript" src="/js/search.js?v=0.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+   search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
