@@ -4,7 +4,7 @@
     
     <entry>
       <title><![CDATA[培训自学计划]]></title>
-      <url>/2018/01/14/%E5%9F%B9%E8%AE%AD%E8%87%AA%E5%AD%A6%E8%AE%A1%E5%88%92/</url>
+      <url>/2018/02/02/%E5%9F%B9%E8%AE%AD%E8%87%AA%E5%AD%A6%E8%AE%A1%E5%88%92/</url>
       <content type="html"><![CDATA[<h1 id="一、HTML"><a href="#一、HTML" class="headerlink" title="一、HTML"></a>一、HTML</h1><h2 id="1-什么是HTML-amp-HTML发展历程"><a href="#1-什么是HTML-amp-HTML发展历程" class="headerlink" title="1. 什么是HTML &amp; HTML发展历程"></a>1. 什么是HTML &amp; HTML发展历程</h2><p><a href="https://www.qingsword.com/qing/html5-1.html" target="_blank" rel="external">参考</a></p>
 <h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><p>HTML（Hypertext Markup Language）中文名称为”超文本标记语言”，它遵循”万维网联盟（W3C）”定义的结构规范，在HTML5之前的版本中，W3C将HTML定义为”标准通用标记语言（SGML，Standard Generalized Markup Language）”的一种应用；而SGML是一种定义标记语言的技术，它通过”文档类型定义（DTD，Document Type Definition）”的形式来指定允许的文档结构，浏览器按照SGML中定义的”DTD规范”来呈现HTML文档的内容。</p>
 <h3 id="发展"><a href="#发展" class="headerlink" title="发展"></a>发展</h3><p>HTML标准版本有：Html2.0、HTML3.2、HTML4.0、HTML4.01、HTML5（它并不是基于SGML或XML定义的，而是类似英文散文规范的形式）。</p>
