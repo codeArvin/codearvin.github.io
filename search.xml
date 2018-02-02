@@ -3,6 +3,127 @@
   
     
     <entry>
+      <title><![CDATA[培训自学计划]]></title>
+      <url>/2018/01/14/%E5%9F%B9%E8%AE%AD%E8%87%AA%E5%AD%A6%E8%AE%A1%E5%88%92/</url>
+      <content type="html"><![CDATA[<h1 id="一、HTML"><a href="#一、HTML" class="headerlink" title="一、HTML"></a>一、HTML</h1><h2 id="1-什么是HTML-amp-HTML发展历程"><a href="#1-什么是HTML-amp-HTML发展历程" class="headerlink" title="1. 什么是HTML &amp; HTML发展历程"></a>1. 什么是HTML &amp; HTML发展历程</h2><p><a href="https://www.qingsword.com/qing/html5-1.html" target="_blank" rel="external">参考</a></p>
+<h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><p>HTML（Hypertext Markup Language）中文名称为”超文本标记语言”，它遵循”万维网联盟（W3C）”定义的结构规范，在HTML5之前的版本中，W3C将HTML定义为”标准通用标记语言（SGML，Standard Generalized Markup Language）”的一种应用；而SGML是一种定义标记语言的技术，它通过”文档类型定义（DTD，Document Type Definition）”的形式来指定允许的文档结构，浏览器按照SGML中定义的”DTD规范”来呈现HTML文档的内容。</p>
+<h3 id="发展"><a href="#发展" class="headerlink" title="发展"></a>发展</h3><p>HTML标准版本有：Html2.0、HTML3.2、HTML4.0、HTML4.01、HTML5（它并不是基于SGML或XML定义的，而是类似英文散文规范的形式）。</p>
+<p>HTML1并不曾存在，也没有人知道它为什么不存在，也许存在过，在实验室里；HTML的第一个官方版本是由IETF（互联网工程任务组）推出的HTML2.0，后来W3C取代IETF的角色，成为HTML的标准组织，1990年代的后半页，HTML的版本被频繁修改，直到1999年HTML4.01的出现，至此，HTML到达了它诞生以来第一个命运的转折点；</p>
+<p>W3C在HTML4.01之后发布的第一个修订版本是XHTML1.0，其中X代表”eXtensible”（扩展），当然也有人将之解读为 “eXtreme”（极端）；XHTML1.0是基于HTML4.01的，并没有引入任何新标签或属性，唯一的区别是，HTML语法比较随便，而XHTML则要求XML般的严格语法，这种严格的标准已经惹怒了当时的一部分开发者；XHTML1.0的推出刚好碰上了CSS的崛起，如果说XHTML1.0是XML风格的HTML，那么后来的修订版XHTML1.1则是货真价实的XML；</p>
+<p>紧随其后W3C发布了第二个修订版XHTML2，它不向前兼容，甚至不兼容之前的HTML；W3C将它定义成一种全新的语言，对于HTML开发者来说这是一场灾难，忍无可忍的开发者们决定放弃W3C制定的标准，他们投奔了另外一个组织WHATWG，而WHATWG研发了一种新的HTML标准，他们将它命名为HTML 5；</p>
+<p>在WHATWG致力于HTML5的同时，W3C继续着他们的XHTML2.0；然而，他们却慢慢的陷入了困境，几个月后，W3C组建了一个新的HTML工作组，他们非常明智的选择了WHATWG的成果作为基础；这一转变带来了一些困惑，W3C同时进行着两套规范，XHTML2和HTML 5（注意，W3C的HTTML 5在5之前有个空格，而WHATWG的HTML5则没有空格），而与此同时WHATWG也在进行着同样的工作；</p>
+<p>这一混乱局面到了2009年才开始变得清晰，W3C宣布终止XHTML2的工作，这是一份关于XHTML2迟到的讣告，也正式宣布了HTML5走上历史的舞台，成为当今最主流的HTML标准规范。</p>
+<h2 id="2-XHTML发展历程"><a href="#2-XHTML发展历程" class="headerlink" title="2. XHTML发展历程"></a>2. XHTML发展历程</h2><h3 id="XHTML"><a href="#XHTML" class="headerlink" title="XHTML"></a>XHTML</h3><p>可扩展超文本标记语言（英语：eXtensible HyperText Markup Language，XHTML），是一种标记语言，表现方式与超文本标记语言（HTML）类似，不过语法上更加严格。从继承关系上讲，HTML是一种基于标准通用标记语言（SGML）的应用，是一种非常灵活的置标语言，而XHTML则基于可扩展标记语言（XML），XML是SGML的一个子集。XHTML 1.0在2000年1月26日成为W3C的推荐标准。</p>
+<p>XHTML1.1为XHTML最后的独立标准，2.0止于草案阶段。XHTML5则是属于HTML5标准的一部分，且名称已改为“以XML序列化的HTML5”，而非“可扩展的HTML”。在今日(2017年)，XHTML5比起HTML5仍远远并非主流。</p>
+<h3 id="发展-1"><a href="#发展-1" class="headerlink" title="发展"></a>发展</h3><p>XHTML是“3种HTML 4文件根据XML 1.0标准重组”而成的[1]。而W3C亦继续建议使用HTML 4.01和积极地研究HTML5及XHTML的计划。于2002年8月发表的XHTML 1.0的建议中，W3C指出XHTML家族将会是Internet的新阶段。而转换使用XHTML可以令开发人员接触XML和其好处，并可以确保以XHTML开发的网页于未来的兼容性。</p>
+<p>HTML语法要求比较松散，这样对网页编写者来说，比较方便，但对于机器来说，语言的语法越松散，处理起来就越困难，对于传统的电脑来说，还有能力兼容松散语法，但对于许多其他设备，比如手机，难度就比较大。因此产生了由DTD定义规则，语法要求更加严格的XHTML。</p>
+<p>大部分常见的浏览器都可以正确地解析XHTML，即使老一点的浏览器，XHTML作为HTML的一个子集，许多也可以解析。也就是说，几乎所有的网页浏览器在正确解析HTML的同时，可兼容XHTML。当然，从HTML完全转移到XHTML，还需要一些过程。</p>
+<p>跟CSS（Cascading Style Sheets，层叠式样式表）结合后，XHTML能发挥真正的威力；这使实现样式跟内容的分离的同时，又能有机地组合网页代码，在另外的单独文件中，还可以混合各种XML应用，比如MathML、SVG。</p>
+<p>从HTML到XHTML过渡的变化比较小，主要是为了适应XML。最大的变化在于文档必须是良构的，所有标签必须闭合，也就是说开始标签要有相应的结束标签。另外，XHTML中所有的标签必须小写。而按照HTML 2.0以来的传统，很多人都是将标签大写，这点两者的差异显著。在XHTML中，所有的参数值，包括数字，必须用双引号括起来（而在SGML和HTML中，引号不是必须的，当内容只是数字、字母及其它允许的特殊字符时，可以不用引号）。所有元素，包括空元素，比如img、br等，也都必须闭合，实现的方式是在开始标签末尾加入斜扛，比如<code>&lt;img ... /&gt;</code> 、<code>&lt;br /&gt;</code>。省略参数，比如<code>&lt;option selected&gt;</code>，也不允许，必须用<code>&lt;option selected=&quot;selected&quot;&gt;</code>。两者的详细差别，可通过W3C XHTML说明来查阅。</p>
+<p>至现时为止，XHTML共有以下几个版本：</p>
+<p>XHTML 1.0 Strict（严格版）是参照“HTML 4.01 Strict”改编，但不包括被弃用的元素。其文件类型描述为：<br><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</code></p>
+<p>XHTML 1.0 Transitional（过渡版）是参照“HTML 4.01 Transitional”改编，包括已于Strict版本被弃用的呈现性元素（例如<code>&lt;center&gt;</code>, <code>&lt;font&gt;</code>等）。其文件类型描述为：<br><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</code></p>
+<p>XHTML 1.0 Frameset（框架版）是参照“HTML 4.01 Frameset”改编，并允许于网页中定义框架元素。其文件类型描述为：<br><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Frameset//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd&quot;&gt;</code></p>
+<p>XHTML 1.1。其文件类型描述为：<br><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.1//EN&quot; &quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;&gt;</code></p>
+<p>XHTML Basic。其文件类型描述为：<br><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML Basic 1.1//EN&quot; &quot;http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd&quot;&gt;</code></p>
+<p>另外，在Microsoft Internet Explorer 5.0所新增的<code>&lt;ruby&gt;</code>小字注解标签，在XHTML 1.1得到支持（参看旁注标记）。<br>而第二版的XHTML 1.0于2002年8月成为W3C推荐的文件类型。2.0止于草案。XHTML5不需要DTD。</p>
+<h2 id="3-编码与文档类型"><a href="#3-编码与文档类型" class="headerlink" title="3. 编码与文档类型"></a>3. 编码与文档类型</h2><h3 id="编码"><a href="#编码" class="headerlink" title="编码"></a>编码</h3><p><a href="http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html" target="_blank" rel="external">字符编码笔记：ASCII，Unicode 和 UTF-8</a></p>
+<p>charset 属性规定 HTML 文档的字符编码</p>
+<h4 id="URL-编码"><a href="#URL-编码" class="headerlink" title="URL 编码"></a>URL 编码</h4><p>URL 只能使用 ASCII 字符集来通过因特网进行发送。</p>
+<p>由于 URL 常常会包含 ASCII 集合之外的字符，URL 必须转换为有效的 ASCII 格式。</p>
+<p>URL 编码使用 “%” 其后跟随两位的十六进制数来替换非 ASCII 字符。</p>
+<p>URL 不能包含空格。URL 编码通常使用 + 来替换空格。</p>
+<h3 id="文档类型"><a href="#文档类型" class="headerlink" title="文档类型"></a>文档类型</h3><p><code>&lt;!DOCTYPE&gt;</code>声明帮助浏览器正确地显示网页。</p>
+<p>Web 世界中存在许多不同的文档。只有了解文档的类型，浏览器才能正确地显示文档。</p>
+<p>HTML 也有多个不同的版本，只有完全明白页面中使用的确切 HTML 版本，浏览器才能完全正确地显示出 HTML 页面。这就是 &lt;!DOCTYPE&gt; 的用处。</p>
+<p><code>&lt;!DOCTYPE&gt;</code>不是 HTML 标签。它为浏览器提供一项信息（声明），即 HTML 是用什么版本编写的。</p>
+<h2 id="4-HTML-字符实体-amp-标签语法-amp-注释"><a href="#4-HTML-字符实体-amp-标签语法-amp-注释" class="headerlink" title="4. HTML 字符实体 &amp; 标签语法 &amp; 注释"></a>4. HTML 字符实体 &amp; 标签语法 &amp; 注释</h2><h3 id="HTML-字符实体"><a href="#HTML-字符实体" class="headerlink" title="HTML 字符实体"></a>HTML 字符实体</h3><p><a href="http://www.runoob.com/html/html-entities.html" target="_blank" rel="external">HTML 字符实体</a></p>
+<p>HTML 中的预留字符必须被替换为字符实体。</p>
+<p>一些在键盘上找不到的字符也可以使用字符实体来替换。</p>
+<p>在 HTML 中，某些字符是预留的。</p>
+<p>在 HTML 中不能使用小于号（&lt;）和大于号（&gt;），这是因为浏览器会误认为它们是标签。</p>
+<p>如果希望正确地显示预留字符，我们必须在 HTML 源代码中使用字符实体（character entities）。 字符实体类似这样：<code>&amp;entity_name;</code>或<code>&amp;#entity_number;</code>;</p>
+<p>如需显示小于号，我们必须这样写：<code>&amp;lt;</code> 或 <code>&amp;#60;</code> 或 <code>&amp;#060;</code></p>
+<p>HTML 中的常用字符实体是不间断空格(<code>&amp;nbsp;</code>)。</p>
+<p>浏览器总是会截短 HTML 页面中的空格。如果您在文本中写 10 个空格，在显示该页面之前，浏览器会删除它们中的 9 个。如需在页面中增加空格的数量，您需要使用 <code>&amp;nbsp;</code> 字符实体。</p>
+<h3 id="标签语法"><a href="#标签语法" class="headerlink" title="标签语法"></a>标签语法</h3><p>HTML通过标签来定义文档结构</p>
+<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p><code>&lt;!--  --&gt;</code></p>
+<h1 id="二、元素"><a href="#二、元素" class="headerlink" title="二、元素"></a>二、元素</h1><h2 id="1-元素类型"><a href="#1-元素类型" class="headerlink" title="1. 元素类型"></a>1. 元素类型</h2><ol>
+<li><p>inline：内联元素。<br>本质特点：默认baseline对齐，且content尺寸刚好包含文本（所以设置width、height无效），故不单独占据整行。</p>
+</li>
+<li><p>block：块元素。<br>本质特点：单独占据一整行，该行行高为该块元素高度。</p>
+</li>
+<li><p>inline-block：内联块元素。<br>本质特点：兼具inline元素与block元素的一些特点，表现为：对自身而言仍是块元素，对一整行而言，又被视为内联元素，可并排处于同一行。</p>
+</li>
+</ol>
+<h2 id="2-块元素与行内元素"><a href="#2-块元素与行内元素" class="headerlink" title="2. 块元素与行内元素"></a>2. 块元素与行内元素</h2><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Block-level_elements#%E5%85%83%E7%B4%A0%E5%88%97%E8%A1%A8" target="_blank" rel="external">块级元素</a><br><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Inline_elemente" target="_blank" rel="external">行内元素</a></p>
+<h2 id="3-常见标签-amp-超链接"><a href="#3-常见标签-amp-超链接" class="headerlink" title="3. 常见标签 &amp; 超链接"></a>3. 常见标签 &amp; 超链接</h2><p><a href="http://www.runoob.com/tags/ref-byfunc.html" target="_blank" rel="external">HTML 标签列表</a></p>
+<h2 id="4-表格-Table"><a href="#4-表格-Table" class="headerlink" title="4. 表格 Table"></a>4. 表格 Table</h2><p><a href="http://www.ruanyifeng.com/blog/2009/05/html_table_mastering.html" target="_blank" rel="external">精通HTML表格的使用</a><br><a href="http://www.runoob.com/html/html-tables.html" target="_blank" rel="external">HTML 表格</a></p>
+<h2 id="5-列表类元素"><a href="#5-列表类元素" class="headerlink" title="5. 列表类元素"></a>5. 列表类元素</h2><p><a href="http://www.runoob.com/html/html-lists.html" target="_blank" rel="external">HTML 列表</a></p>
+<ol>
+<li><p>无序列表</p>
+ <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Coffee<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Milk<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>有序列表</p>
+ <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Coffee<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Milk<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>自定义列表</p>
+ <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dt</span>&gt;</span>Coffee<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>- black hot drink<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dt</span>&gt;</span>Milk<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>- white cold drink<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="6-图片元素-img"><a href="#6-图片元素-img" class="headerlink" title="6. 图片元素 img"></a>6. 图片元素 img</h2><p><a href="http://www.runoob.com/html/html-images.html" target="_blank" rel="external">HTML 图像</a></p>
+<h2 id="7-表单类元素-标题和段落元素、语义化及正确性、新增标签和元素"><a href="#7-表单类元素-标题和段落元素、语义化及正确性、新增标签和元素" class="headerlink" title="7. 表单类元素: 标题和段落元素、语义化及正确性、新增标签和元素"></a>7. 表单类元素: 标题和段落元素、语义化及正确性、新增标签和元素</h2><p><a href="http://www.runoob.com/html/html-forms.html" target="_blank" rel="external">HTML 表单和输入</a><br><a href="http://www.runoob.com/html/html5-form-elements.html" target="_blank" rel="external">HTML5 表单元素</a><br><a href="http://www.runoob.com/html/html5-semantic-elements.html" target="_blank" rel="external">HTML5 语义元素</a><br><a href="http://www.runoob.com/html/html5-new-element.html" target="_blank" rel="external">HTML5 新元素</a></p>
+<h2 id="8-表单与文件"><a href="#8-表单与文件" class="headerlink" title="8. 表单与文件"></a>8. 表单与文件</h2><h1 id="三、CSS"><a href="#三、CSS" class="headerlink" title="三、CSS"></a>三、CSS</h1><h2 id="1-什么是-CSS-amp-CSS-语法"><a href="#1-什么是-CSS-amp-CSS-语法" class="headerlink" title="1. 什么是 CSS &amp; CSS 语法"></a>1. 什么是 CSS &amp; CSS 语法</h2><h2 id="2-如何将-CSS-应用到网页"><a href="#2-如何将-CSS-应用到网页" class="headerlink" title="2. 如何将 CSS 应用到网页"></a>2. 如何将 CSS 应用到网页</h2><h2 id="3-CSS-选择符-class-和-id"><a href="#3-CSS-选择符-class-和-id" class="headerlink" title="3. CSS 选择符:class 和 id"></a>3. CSS 选择符:class 和 id</h2><h2 id="4-font-类属性-amp-text-类属性"><a href="#4-font-类属性-amp-text-类属性" class="headerlink" title="4. font 类属性 &amp; text 类属性"></a>4. font 类属性 &amp; text 类属性</h2><h2 id="5-background-背景属性"><a href="#5-background-背景属性" class="headerlink" title="5. background 背景属性"></a>5. background 背景属性</h2><h2 id="6-border-边框属性"><a href="#6-border-边框属性" class="headerlink" title="6. border 边框属性"></a>6. border 边框属性</h2><h2 id="7-float-浮动"><a href="#7-float-浮动" class="headerlink" title="7. float 浮动"></a>7. float 浮动</h2><h2 id="8-position-定位"><a href="#8-position-定位" class="headerlink" title="8. position 定位"></a>8. position 定位</h2><h2 id="9-盒模型"><a href="#9-盒模型" class="headerlink" title="9. 盒模型"></a>9. 盒模型</h2><h2 id="10-补白"><a href="#10-补白" class="headerlink" title="10. 补白"></a>10. 补白</h2><h2 id="11-浏览器兼容性"><a href="#11-浏览器兼容性" class="headerlink" title="11. 浏览器兼容性"></a>11. 浏览器兼容性</h2><h1 id="四、JavaScript"><a href="#四、JavaScript" class="headerlink" title="四、JavaScript"></a>四、JavaScript</h1><h2 id="1-JavaScript-基础"><a href="#1-JavaScript-基础" class="headerlink" title="1. JavaScript 基础"></a>1. JavaScript 基础</h2><h2 id="2-JavaScript-数据类型"><a href="#2-JavaScript-数据类型" class="headerlink" title="2. JavaScript 数据类型"></a>2. JavaScript 数据类型</h2><h2 id="3-语句、表达式和运算符"><a href="#3-语句、表达式和运算符" class="headerlink" title="3. 语句、表达式和运算符"></a>3. 语句、表达式和运算符</h2><h2 id="4-变量与函数"><a href="#4-变量与函数" class="headerlink" title="4. 变量与函数"></a>4. 变量与函数</h2><h2 id="5-数组"><a href="#5-数组" class="headerlink" title="5. 数组"></a>5. 数组</h2><h2 id="6-JSON"><a href="#6-JSON" class="headerlink" title="6. JSON"></a>6. JSON</h2><h2 id="7-日期处理"><a href="#7-日期处理" class="headerlink" title="7. 日期处理"></a>7. 日期处理</h2><h2 id="8-DOM-amp-BOM"><a href="#8-DOM-amp-BOM" class="headerlink" title="8. DOM &amp; BOM"></a>8. DOM &amp; BOM</h2><h2 id="9-事件"><a href="#9-事件" class="headerlink" title="9. 事件"></a>9. 事件</h2><h2 id="10-正则表达式"><a href="#10-正则表达式" class="headerlink" title="10. 正则表达式"></a>10. 正则表达式</h2><h2 id="11-encode、decode"><a href="#11-encode、decode" class="headerlink" title="11. encode、decode"></a>11. encode、decode</h2><h2 id="12-对象"><a href="#12-对象" class="headerlink" title="12. 对象"></a>12. 对象</h2><h2 id="13-作用域链"><a href="#13-作用域链" class="headerlink" title="13. 作用域链"></a>13. 作用域链</h2><h2 id="14-原型链"><a href="#14-原型链" class="headerlink" title="14. 原型链"></a>14. 原型链</h2><h2 id="15-构造函数"><a href="#15-构造函数" class="headerlink" title="15. 构造函数"></a>15. 构造函数</h2><h2 id="16-执行上下文栈与执行上下文"><a href="#16-执行上下文栈与执行上下文" class="headerlink" title="16. 执行上下文栈与执行上下文"></a>16. 执行上下文栈与执行上下文</h2><h2 id="17-变量对象与活动对象"><a href="#17-变量对象与活动对象" class="headerlink" title="17. 变量对象与活动对象"></a>17. 变量对象与活动对象</h2><h2 id="18-闭包"><a href="#18-闭包" class="headerlink" title="18. 闭包"></a>18. 闭包</h2><h2 id="19-this"><a href="#19-this" class="headerlink" title="19. this"></a>19. this</h2>]]></content>
+      
+        <categories>
+            
+            <category> 学习记录 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> CSS </tag>
+            
+            <tag> JS </tag>
+            
+            <tag> HTML </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[JavaScript高级程序设计读书笔记（一）]]></title>
+      <url>/2018/01/14/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%AC%E4%B8%89%E7%89%88%E7%AC%94%E8%AE%B0(%E4%B8%80)/</url>
+      <content type="html"><![CDATA[<h1 id="一、JavaScript-简介"><a href="#一、JavaScript-简介" class="headerlink" title="一、JavaScript 简介"></a>一、JavaScript 简介</h1><ol>
+<li>虽然JavaScript和ECMAScript通常都被人们用来表达相同的含义，但JavaScript的含义却比ECMA-262中规定的要多得多。一个完整的JavaScript应该由下面三个不同的部分组成<ul>
+<li><strong>核心（ECMAScript）</strong>: 由ECMA-262定义，提供核心语言功能</li>
+<li><strong>文档对象模型（DOM）</strong>: 提供访问和操作网页内容的方法和接口。DOM1、DOM2、DOM3，功能目标依次更加宽泛</li>
+<li><strong>浏览器对象模型（BOM）</strong>: 提供与浏览器交互的方法和接口</li>
+</ul>
+</li>
+</ol>
+<p>#</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 读书笔记 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> JavaScript高级程序设计 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Mac 使用记录]]></title>
       <url>/2017/11/08/Mac%20%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</url>
       <content type="html"><![CDATA[<h2 id="软件篇"><a href="#软件篇" class="headerlink" title="软件篇"></a>软件篇</h2><h3 id="终端工具-iTerm2"><a href="#终端工具-iTerm2" class="headerlink" title="终端工具 iTerm2"></a>终端工具 iTerm2</h3><p>用于替代Mac原生终端，<a href="https://www.iterm2.com/" target="_blank" rel="external">官网</a>，界面漂亮，色彩丰富，可以选择不同的主题。敲命令时，如果命令正确显示绿色，不正确显示红色。<br><img src="/2017/11/08/Mac 使用记录/iTerm2.jpg" alt="iTerm2"></p>
@@ -73,7 +194,7 @@
 <ul>
 <li><strong>安装</strong>：<code>npm install hexo-git-backup --save</code>,hexo版本需为<code>3.x.x</code></li>
 <li><p><strong>添加配置</strong>：在<code>hexo/_config.yml</code>添加</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> backup:</span><br><span class="line">   type: git</span><br><span class="line">message: update xxx <span class="comment">//可选，diy信息</span></span><br><span class="line">theme: coney,landscape  <span class="comment">//可选，主题备份</span></span><br><span class="line">   repository:</span><br><span class="line">      github: git@github.com:xxx/xxx.git,branchName <span class="comment">//备份的目的路径，必填branch分支</span></span><br><span class="line">      gitcafe: git@github.com:xxx/xxx.git,branchName <span class="comment">//可选，备份到gitcafe</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">backup:</span><br><span class="line">  type: git</span><br><span class="line">    	message: update xxx <span class="comment">//可选，diy信息</span></span><br><span class="line">    	theme: coney,landscape  <span class="comment">//可选，主题备份</span></span><br><span class="line">  repository:</span><br><span class="line">      github: git@github.com:xxx/xxx.git,branchName <span class="comment">//备份的目的路径，必填branch分支</span></span><br><span class="line">      gitcafe: git@github.com:xxx/xxx.git,branchName <span class="comment">//可选，备份到gitcafe</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p><strong>用法</strong>：<code>hexo backup</code> OR <code>hexo b</code></p>
 </li>
@@ -804,6 +925,57 @@
     </entry>
     
     <entry>
+      <title><![CDATA[Linux学习记录--有趣的linux命令]]></title>
+      <url>/2017/04/09/Linux%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95--%E6%9C%89%E8%B6%A3%E7%9A%84linux%E5%91%BD%E4%BB%A4/</url>
+      <content type="html"><![CDATA[<h2 id="输出图形字符的命令"><a href="#输出图形字符的命令" class="headerlink" title="输出图形字符的命令"></a>输出图形字符的命令</h2><p><strong>banner</strong>:</p>
+<ul>
+<li>安装: <code>sudo apt install sysvbanner</code></li>
+<li>eg: <code>banner linux</code></li>
+<li><img src="/2017/04/09/Linux学习记录--有趣的linux命令/banner.png" alt=""></li>
+</ul>
+<p><strong>printerbanner</strong>:</p>
+<ul>
+<li>eg: <code>printerbanner -w 30 A</code> <code>-w</code>指定宽度</li>
+<li><img src="/2017/04/09/Linux学习记录--有趣的linux命令/printerbanner.png" alt=""></li>
+</ul>
+<p><strong>toilet</strong>:</p>
+<ul>
+<li>eg: <code>toilet love</code></li>
+<li><img src="/2017/04/09/Linux学习记录--有趣的linux命令/toilet.png" alt=""></li>
+</ul>
+<p><strong>figlet</strong>:</p>
+<ul>
+<li>eg: <code>figlet love</code></li>
+<li><img src="/2017/04/09/Linux学习记录--有趣的linux命令/figlet.png" alt=""></li>
+</ul>
+<h2 id="监督你的眼睛"><a href="#监督你的眼睛" class="headerlink" title="监督你的眼睛"></a>监督你的眼睛</h2><p><code>xeyes</code><br>后台运行: <code>nohup xeyes &amp;</code><br>只能运行在图形界面</p>
+<h2 id="数字雨"><a href="#数字雨" class="headerlink" title="数字雨"></a>数字雨</h2><p><code>cmatrix</code><br><img src="/2017/04/09/Linux学习记录--有趣的linux命令/cmatrix.png" alt=""></p>
+<h2 id="跳动的火焰"><a href="#跳动的火焰" class="headerlink" title="跳动的火焰"></a>跳动的火焰</h2><p><code>aafire</code><br>安装: <code>sudo apt install libaa-bin</code><br><img src="/2017/04/09/Linux学习记录--有趣的linux命令/aafire.gif" alt=""></p>
+<h2 id="幸运饼干"><a href="#幸运饼干" class="headerlink" title="幸运饼干"></a>幸运饼干</h2><p><code>fortune</code>: 打印出一段随机的名言<br><img src="/2017/04/09/Linux学习记录--有趣的linux命令/fortune.png" alt=""></p>
+<h2 id="以动物说话形式打印出一段话"><a href="#以动物说话形式打印出一段话" class="headerlink" title="以动物说话形式打印出一段话"></a>以动物说话形式打印出一段话</h2><p><code>cowsay</code><br><code>cowsay -l</code>: 打印出所有支持的动物种类<br><code>cowsay -f elephant hello world</code>: <code>-f</code>指定动物类型<br><code>fortune | cowsay -f daemon</code>: 可以与<code>fortune</code>命令相结合<br><img src="/2017/04/09/Linux学习记录--有趣的linux命令/cowsay.png" alt=""></p>
+<h2 id="Space-Invaders"><a href="#Space-Invaders" class="headerlink" title="Space Invaders"></a>Space Invaders</h2><p><code>ninvaders</code><br><img src="/2017/04/09/Linux学习记录--有趣的linux命令/ninvaders.gif" alt=""></p>
+<h2 id="彩色的火焰"><a href="#彩色的火焰" class="headerlink" title="彩色的火焰"></a>彩色的火焰</h2><p><code>cacafire</code><br>安装: <code>sudo apt install caca-utils</code><br><img src="/2017/04/09/Linux学习记录--有趣的linux命令/cacafire.gif" alt=""></p>
+<h2 id="bb"><a href="#bb" class="headerlink" title="bb"></a>bb</h2><p><code>bb</code><br><img src="/2017/04/09/Linux学习记录--有趣的linux命令/bb.gif" alt=""></p>
+]]></content>
+      
+        <categories>
+            
+            <category> 学习记录 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> 后端 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Linux学习记录--基本操作]]></title>
       <url>/2017/04/09/Linux%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95--%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</url>
       <content type="html"><![CDATA[<h2 id="常用通配符"><a href="#常用通配符" class="headerlink" title="常用通配符"></a>常用通配符</h2><p><code>*</code>: 匹配0或多个字符<br><code>?</code>: 匹配任意一个字符<br><code>[list]</code>: 匹配list中的任意单一字符<br><code>[!list]</code>: 匹配除了list中的单一字符意外的字符<br><code>[c1-c2]</code>: 匹配c1-c2中的任意单一字符<br><code>{string1,string2,...}</code>: 匹配string1或string2(或更多)其一字符<br><code>{c1..c2}</code>: 匹配c1-c2全部字符</p>
@@ -1356,57 +1528,6 @@
 </ul>
 </li>
 </ul>
-]]></content>
-      
-        <categories>
-            
-            <category> 学习记录 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Linux </tag>
-            
-            <tag> 后端 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Linux学习记录--有趣的linux命令]]></title>
-      <url>/2017/04/09/Linux%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95--%E6%9C%89%E8%B6%A3%E7%9A%84linux%E5%91%BD%E4%BB%A4/</url>
-      <content type="html"><![CDATA[<h2 id="输出图形字符的命令"><a href="#输出图形字符的命令" class="headerlink" title="输出图形字符的命令"></a>输出图形字符的命令</h2><p><strong>banner</strong>:</p>
-<ul>
-<li>安装: <code>sudo apt install sysvbanner</code></li>
-<li>eg: <code>banner linux</code></li>
-<li><img src="/2017/04/09/Linux学习记录--有趣的linux命令/banner.png" alt=""></li>
-</ul>
-<p><strong>printerbanner</strong>:</p>
-<ul>
-<li>eg: <code>printerbanner -w 30 A</code> <code>-w</code>指定宽度</li>
-<li><img src="/2017/04/09/Linux学习记录--有趣的linux命令/printerbanner.png" alt=""></li>
-</ul>
-<p><strong>toilet</strong>:</p>
-<ul>
-<li>eg: <code>toilet love</code></li>
-<li><img src="/2017/04/09/Linux学习记录--有趣的linux命令/toilet.png" alt=""></li>
-</ul>
-<p><strong>figlet</strong>:</p>
-<ul>
-<li>eg: <code>figlet love</code></li>
-<li><img src="/2017/04/09/Linux学习记录--有趣的linux命令/figlet.png" alt=""></li>
-</ul>
-<h2 id="监督你的眼睛"><a href="#监督你的眼睛" class="headerlink" title="监督你的眼睛"></a>监督你的眼睛</h2><p><code>xeyes</code><br>后台运行: <code>nohup xeyes &amp;</code><br>只能运行在图形界面</p>
-<h2 id="数字雨"><a href="#数字雨" class="headerlink" title="数字雨"></a>数字雨</h2><p><code>cmatrix</code><br><img src="/2017/04/09/Linux学习记录--有趣的linux命令/cmatrix.png" alt=""></p>
-<h2 id="跳动的火焰"><a href="#跳动的火焰" class="headerlink" title="跳动的火焰"></a>跳动的火焰</h2><p><code>aafire</code><br>安装: <code>sudo apt install libaa-bin</code><br><img src="/2017/04/09/Linux学习记录--有趣的linux命令/aafire.gif" alt=""></p>
-<h2 id="幸运饼干"><a href="#幸运饼干" class="headerlink" title="幸运饼干"></a>幸运饼干</h2><p><code>fortune</code>: 打印出一段随机的名言<br><img src="/2017/04/09/Linux学习记录--有趣的linux命令/fortune.png" alt=""></p>
-<h2 id="以动物说话形式打印出一段话"><a href="#以动物说话形式打印出一段话" class="headerlink" title="以动物说话形式打印出一段话"></a>以动物说话形式打印出一段话</h2><p><code>cowsay</code><br><code>cowsay -l</code>: 打印出所有支持的动物种类<br><code>cowsay -f elephant hello world</code>: <code>-f</code>指定动物类型<br><code>fortune | cowsay -f daemon</code>: 可以与<code>fortune</code>命令相结合<br><img src="/2017/04/09/Linux学习记录--有趣的linux命令/cowsay.png" alt=""></p>
-<h2 id="Space-Invaders"><a href="#Space-Invaders" class="headerlink" title="Space Invaders"></a>Space Invaders</h2><p><code>ninvaders</code><br><img src="/2017/04/09/Linux学习记录--有趣的linux命令/ninvaders.gif" alt=""></p>
-<h2 id="彩色的火焰"><a href="#彩色的火焰" class="headerlink" title="彩色的火焰"></a>彩色的火焰</h2><p><code>cacafire</code><br>安装: <code>sudo apt install caca-utils</code><br><img src="/2017/04/09/Linux学习记录--有趣的linux命令/cacafire.gif" alt=""></p>
-<h2 id="bb"><a href="#bb" class="headerlink" title="bb"></a>bb</h2><p><code>bb</code><br><img src="/2017/04/09/Linux学习记录--有趣的linux命令/bb.gif" alt=""></p>
 ]]></content>
       
         <categories>
