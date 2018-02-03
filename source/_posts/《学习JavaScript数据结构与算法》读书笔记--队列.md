@@ -55,7 +55,7 @@ var Queue = function () {
 }
 ```
 优先队列
-```JavaScript
+```javascript
 var PriorityQueue = function() {
   var items = [];
 
@@ -104,7 +104,7 @@ var PriorityQueue = function() {
 2、原理: 利用循环队列
 
 3、代码:
-```JavaScript
+```javascript
 var hotPotato = function(nameList, num) {
   var queue = new Queue();
 

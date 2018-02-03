@@ -31,11 +31,11 @@ toc: true
   ```javascript
   backup:
     type: git
-	message: update xxx //可选，diy信息
-	theme: coney,landscape  //可选，主题备份
+      	message: update xxx //可选，diy信息
+      	theme: coney,landscape  //可选，主题备份
     repository:
-       github: git@github.com:xxx/xxx.git,branchName //备份的目的路径，必填branch分支
-       gitcafe: git@github.com:xxx/xxx.git,branchName //可选，备份到gitcafe
+        github: git@github.com:xxx/xxx.git,branchName //备份的目的路径，必填branch分支
+        gitcafe: git@github.com:xxx/xxx.git,branchName //可选，备份到gitcafe
   ```
   * **用法**：`hexo backup` OR `hexo b`
   * **恢复**：
