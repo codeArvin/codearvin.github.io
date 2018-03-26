@@ -196,7 +196,166 @@ typeof obj; // 'object'
     return o;
   }
   ```
-  2. **构造函数模式**：
+  2. **构造函数模式**：构造函数需要使用new操作符。以这种方式调用构造函数实际上会经历以下4个步骤：
+    * 创建一个新对象
+    * 将构造函数的作用域赋给新对象(因此this就指向了这个新对象)
+    * 执行构造函数中的代码
+    * 返回新对象
   ```javascript
-
+  function Person(name, age, job) {
+    this.name = name;
+    this.age = age;
+    this.job = job;
+  }
+  var person1 = new Person('nicholas', 29, 'Doctor');
   ```
+  构造函数与其他函数的唯一区别就在于调用他们的方式不用。不存在定义构造函数的特殊语法。任何函数，只要通过new操作符来调用，那它就可以作为构造函数；而任何函数，如果不通过new操作符来调用，那它跟普通函数也没有任何区别。
+  ```javascript
+  var person = new Person('nicholas', 29, 'doctor'); // 作为构造函数来调用
+
+  Person('nicholas', 29, 'doctor'); // 添加到window
+  window.name; // nicholas
+
+  var o = new Object();
+  Person.call(o, 'nicholas', 29, 'doctor'); // 在另一个对象的作用域中调用
+  o.name;
+  ```
+  3. **原型模式**：我们创建的每一个函数都有一个`prototype`(原型)属性，这个属性是一个指针，指向一个对象，而这个对象的用途是包含可以由特定类型的所有实例共享的属性和方法。使用原型对象的好处是可以让所有对象实例共享它所包含的属性和方法
+  ```javascript
+  function Person() {}
+  Person.prototype.name = 'nicholas';
+  Person.prototype.age = 29;
+  Person.prototype.job = 'doctor';
+
+  var person1 = new Person();
+  ```
+  无论什么时候，只要创建了一个新函数，就会根据一组特定的规则为该函数创建一个`prototype`属性，这个属性指向函数的原型对象。在默认情况下，所有原型对象都会自动获得一个`constructor`(构造函数)属性，这个属性包含一个指向`prototype`属性所在函数的指针。如`Person.prototype.constructor === Person; // true`
+  创建了自定义的构造函数之后，其原型对象默认只会取得`constructor`属性，至于其他方法都是从`Object`继承而来。当调用一个构造函数创建一个新实例后，该实例的内部将包含一个指针(内部属性)，指向构造函数的**原型对象**，没有标准的方式访问`[[Prototype]]`，但浏览器中可以使用`__proto__`来进行访问
+  访问对象的属性时，会沿着其原型链向上进行搜索，直至找到或没找到
+  **重写原型对象切断了现有原型与之前任何已经存在的对象实例之间的联系；他们引用的仍然是最初的原型**
+  `isPrototypeOf()`: `Person.prototype.isPrototypeOf(person1) // true`
+  `Object.getPrototypeOf()`: `Object.getPrototypeOf(person1) == Person.prototype // true`
+  `hasOwnProperty()`: 可以检测一个属性是存在于实例中，还是存在于原型中
+  `Object.getOwnPropertyNames()`: 用来得到所有实例属性，无论是否可枚举
+  4. **组合使用构造函数模式和原型模式**：
+  ```javascript
+  function Person(name) {
+    this.name = name;
+  }
+  Person.prototype = {
+    constructor: Person,
+    sayName: function() {
+      return this.name;
+    }
+  }
+  var person1 = new Person('hello');
+  ```
+  5. **动态原型模式**：*还是不太明白和上一个模式的区别。。。*
+  ```javascript
+  function Person(name) {
+    this.name = name;
+
+    if (typeof this.sayName != 'function') {
+      Person.prototype.sayName = function () {
+        return this.name;
+      }
+    }
+  }
+  var person1 = new Person('hello');
+  ```
+  6. **寄生构造函数模式**：*不太明白它和工厂模式的区别，为什么会出现这种模式*
+  ```javascript
+  function Person(name) {
+    var o = new Object();
+    o.name = name;
+    return o;
+  }
+  var person1 = new Person('hello');
+  ```
+  除了使用new操作符并把使用的包装函数叫做构造函数以外，这个模式跟工厂模式没有任何区别
+  构造函数在没有返回值的情况下，默认会返回新对象实例。而通过在·构造函数的末尾添加`return`，可以重写调用构造函数时返回的值
+  这个模式可以在特殊的情况下用来为对象创建构造函数。假设我们想创建一个具有额外方法的特殊数组。由于不能直接修改`Array`构造函数，因此可以使用这个模式：
+  ```javascript
+  function SpecialArray() {
+    var values = new Array();
+    values.push.apply(values, arguments);
+    values.toPipedString = function () {
+      return this.join('|');
+    }
+    return values;
+  }
+  ```
+  7. **稳妥构造函数模式**: 所谓**稳妥对象**，指的是没有公共属性，而且其方法也不引用`this`的对象。稳妥对象最适合在一些安全的环境中(这些环境中会禁止使用`this`和`new`)，或者在防止数据被其他应用程序改动时使用。稳妥构造函数遵循着与寄生构造函数类似的模式，但有两点不同：一是新创建对象的实例方法不引用`this`；二是不使用`new`操作符调用构造函数
+  ```javascript
+  function Person(name) {
+    var o = new Obeject();
+
+    o.sayName = function () {
+      return name;
+    }
+    return o;
+  }
+  ```
+7. **继承**：许多OO语言都支持两种继承方式：**接口继承**和**实现继承**。接口继承只继承方法签名，而实现继承则继承实际的方法。ECMAScript中无法实现接口继承，它只支持实现继承，主要依靠原型链来实现
+  1. **原型链**：实例的原型对象的原型对象的···，构成了原型链
+  2. **借用构造函数**：在子类型构造函数内部调用超类型构造函数
+  ```javascript
+  function SuperType(name) {
+    this.name = name;
+  }
+  function SubType() {
+    SuperType.call(this, 'hello');
+    this.age = 29;
+  }
+  ```
+  3. **组合继承**：有时候也叫伪经典继承，指的是将原型链和借用构造函数的技术组合到一起，从而发挥两者之长的一种继承模式。其背后的思路是使用原型链实现对原型属性和方法的继承，而通过借用构造函数来实现对实例属性的继承。这样，既通过在原型上定义方法实现了函数复用，又能够保证每个实例都有自己的属性
+  ```javascript
+  function SuperType(name) {
+    this.name = name;
+    this.colors = ['red', 'blue', 'green'];
+  }
+  SuperType.prototype.sayName = function () {
+    return this.name;
+  };
+
+  function SubType(name, age) {
+    SuperType.call(this, name); // 继承属性，但我看其实就是为共有操作进行函数封装
+    this.age = age;
+  }
+  // 继承方法
+  SubType.prototype = new SuperType();
+  SubType.prototype.sayAge = function () {
+    return this.age;
+  }
+  ```
+  4. **原型式继承**：借助原型可以基于已有的对象创建新对象，同时还不必因此创建自定义类型
+  ```javascript
+  function object(o) {
+    function F() {}
+    F.prototype = o;
+    return new F();
+  }
+  ```
+  本质上讲，`object()`对传入的对象进行了一次浅复制
+  如果只想让一个对象与另一个对象保持类似的情况下，原型式继承是完全可以胜任的
+  5. **寄生式继承**：与寄生构造函数和工厂模式类似，即创建一个仅用于封装继承过程的函数，该函数在内部以某种方式来增强对象，对后再像真的是它完成了所有工作一样返回对象(*PS:话说寄生是不是就是在强大对象身上添加点功能，然后把这强大了点的对象当作自己的功劳*)
+  ```javascript
+  function createAnother(original) {
+    var clone = object(original);
+    clone.sayHi = function () {
+      return 'hi';
+    }
+    return clone;
+  }
+  ```
+  6. **寄生组合式继承**：组合继承无论在什么情况下，都会调用两次超类型构造函数。为了解决这个问题，我们提出了寄生组合式继承：即通过借用构造函数来继承属性，通过原型链的混成形式来继承方法。其背后的思路是，不必为了指定子类型的原型而调用超类型的构造函数，我们所需要的无非是超类型的一个副本而已。本质上，就是使用寄生式继承模式来继承超类型的原型，然后再将结果指定给子类型的原型(*PS:区别也就是一种使用new操作符来链接原型，一种使用赋值操作来链接原型，第二种方法的好处是超类型中不会存在多余的属性*)
+  ```javascript
+  function inheritPrototype(subType, superType) {
+    var prototype = object(superType.prototype);
+    prototype.constructor = subType;
+    subType.prototype = prototype;
+  }
+  ```
+8. PS：感觉继承的这些方法都是在向一个方向不断优化的，这个方向是：通过方法创建的实例，独特的属性值自己拥有，共享的属性方法放在原型链上，实现尽可能减少不必要的开支
+
+# 函数表达式
