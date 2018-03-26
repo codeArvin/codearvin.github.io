@@ -5,25 +5,19 @@
     <entry>
       <title><![CDATA[Mac下好玩的终端命令]]></title>
       <url>/2018/03/26/Mac%E4%B8%8B%E5%A5%BD%E7%8E%A9%E7%9A%84%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4/</url>
-      <content type="html"><![CDATA[<h1 id="Mac下好玩的终端命令"><a href="#Mac下好玩的终端命令" class="headerlink" title="Mac下好玩的终端命令"></a>Mac下好玩的终端命令</h1><h2 id="figlet"><a href="#figlet" class="headerlink" title="figlet"></a>figlet</h2><p><code>brew install figlet</code><br><img src="/Mac下好玩的终端命令/figlet.jpg" alt="figlet"></p>
-<h2 id="cowsay"><a href="#cowsay" class="headerlink" title="cowsay"></a>cowsay</h2><p><code>brew install cowsay</code><br><code>cowsay -l</code>: 查看所有可用动物<br><code>cowsay -f daemon hello world</code>: 设置显示的动物<br><img src="/Mac下好玩的终端命令/cowsay.jpg" alt="cowsay"></p>
-<h2 id="sl"><a href="#sl" class="headerlink" title="sl"></a>sl</h2><p><code>brew install sl</code><br><img src="/Mac下好玩的终端命令/sl.jpg" alt="sl"></p>
-<h2 id="toilet"><a href="#toilet" class="headerlink" title="toilet"></a>toilet</h2><p><code>brew install toilet</code><br><img src="/Mac下好玩的终端命令/sl.jpg" alt="toilet"></p>
-<h2 id="2048"><a href="#2048" class="headerlink" title="2048"></a>2048</h2><p><code>brew install c2048</code><br><code>2048 blackwhite</code>: 黑白风格<br><code>2048 bluered</code>: 蓝红风格<br><img src="/Mac下好玩的终端命令/2048.jpg" alt="2048"></p>
-<h2 id="ninvaders"><a href="#ninvaders" class="headerlink" title="ninvaders"></a>ninvaders</h2><p><code>brew install ninvaders</code><br><img src="/Mac下好玩的终端命令/ninvaders.jpg" alt="ninvaders"></p>
-<h2 id="bastet"><a href="#bastet" class="headerlink" title="bastet"></a>bastet</h2><p><code>brew install bastet</code><br><img src="/Mac下好玩的终端命令/bastet.jpg" alt="bastet"></p>
-<h2 id="greed"><a href="#greed" class="headerlink" title="greed"></a>greed</h2><p><code>brew install greed</code><br>数字表示能吃几个<br><img src="/Mac下好玩的终端命令/greed.jpg" alt="greed"></p>
-<h2 id="nsnake"><a href="#nsnake" class="headerlink" title="nsnake"></a>nsnake</h2><p><code>brew install nsnake</code><br><img src="/Mac下好玩的终端命令/nsnake.jpg" alt="nsnake"></p>
-<h2 id="pacman"><a href="#pacman" class="headerlink" title="pacman"></a>pacman</h2><p><code>brew install pacman4comsole</code><br><code>pacman</code><br><img src="/Mac下好玩的终端命令/pacman.jpg" alt="pacman"></p>
-<h2 id="nethack"><a href="#nethack" class="headerlink" title="nethack"></a>nethack</h2><p><code>brew install nethack</code><br>文字游戏<br><img src="/Mac下好玩的终端命令/nethack.jpg" alt="nethack"></p>
-<h2 id="nudoku"><a href="#nudoku" class="headerlink" title="nudoku"></a>nudoku</h2><p><code>brew install nudoku</code><br><img src="/Mac下好玩的终端命令/nudoku.jpg" alt="nudoku"></p>
-<h2 id="moon-buggy"><a href="#moon-buggy" class="headerlink" title="moon-buggy"></a>moon-buggy</h2><p><code>brew install moon-buggy</code><br><img src="/Mac下好玩的终端命令/moon-buggy.jpg" alt="moon-buggy"></p>
-<p>https下显示安全：</p>
-<ol>
-<li>配域名，指向localhost</li>
-<li>使用Charles证书</li>
-<li>监听443端口</li>
-</ol>
+      <content type="html"><![CDATA[<h1 id="Mac下好玩的终端命令"><a href="#Mac下好玩的终端命令" class="headerlink" title="Mac下好玩的终端命令"></a>Mac下好玩的终端命令</h1><h2 id="figlet"><a href="#figlet" class="headerlink" title="figlet"></a>figlet</h2><p><code>brew install figlet</code><br><img src="/2018/03/26/Mac下好玩的终端命令/figlet.jpg" alt="figlet"></p>
+<h2 id="cowsay"><a href="#cowsay" class="headerlink" title="cowsay"></a>cowsay</h2><p><code>brew install cowsay</code><br><code>cowsay -l</code>: 查看所有可用动物<br><code>cowsay -f daemon hello world</code>: 设置显示的动物<br><img src="/2018/03/26/Mac下好玩的终端命令/cowsay.jpg" alt="cowsay"></p>
+<h2 id="sl"><a href="#sl" class="headerlink" title="sl"></a>sl</h2><p><code>brew install sl</code><br><img src="/2018/03/26/Mac下好玩的终端命令/sl.jpg" alt="sl"></p>
+<h2 id="toilet"><a href="#toilet" class="headerlink" title="toilet"></a>toilet</h2><p><code>brew install toilet</code><br><img src="/2018/03/26/Mac下好玩的终端命令/toilet.jpg" alt="toilet"></p>
+<h2 id="2048"><a href="#2048" class="headerlink" title="2048"></a>2048</h2><p><code>brew install c2048</code><br><code>2048 blackwhite</code>: 黑白风格<br><code>2048 bluered</code>: 蓝红风格<br><img src="/2018/03/26/Mac下好玩的终端命令/2048.jpg" alt="2048"></p>
+<h2 id="ninvaders"><a href="#ninvaders" class="headerlink" title="ninvaders"></a>ninvaders</h2><p><code>brew install ninvaders</code><br><img src="/2018/03/26/Mac下好玩的终端命令/ninvaders.jpg" alt="ninvaders"></p>
+<h2 id="bastet"><a href="#bastet" class="headerlink" title="bastet"></a>bastet</h2><p><code>brew install bastet</code><br><img src="/2018/03/26/Mac下好玩的终端命令/bastet.jpg" alt="bastet"></p>
+<h2 id="greed"><a href="#greed" class="headerlink" title="greed"></a>greed</h2><p><code>brew install greed</code><br>数字表示能吃几个<br><img src="/2018/03/26/Mac下好玩的终端命令/greed.jpg" alt="greed"></p>
+<h2 id="nsnake"><a href="#nsnake" class="headerlink" title="nsnake"></a>nsnake</h2><p><code>brew install nsnake</code><br><img src="/2018/03/26/Mac下好玩的终端命令/nsnake.jpg" alt="nsnake"></p>
+<h2 id="pacman"><a href="#pacman" class="headerlink" title="pacman"></a>pacman</h2><p><code>brew install pacman4comsole</code><br><code>pacman</code><br><img src="/2018/03/26/Mac下好玩的终端命令/pacman.jpg" alt="pacman"></p>
+<h2 id="nethack"><a href="#nethack" class="headerlink" title="nethack"></a>nethack</h2><p><code>brew install nethack</code><br>文字游戏<br><img src="/2018/03/26/Mac下好玩的终端命令/nethack.jpg" alt="nethack"></p>
+<h2 id="nudoku"><a href="#nudoku" class="headerlink" title="nudoku"></a>nudoku</h2><p><code>brew install nudoku</code><br><img src="/2018/03/26/Mac下好玩的终端命令/nudoku.jpg" alt="nudoku"></p>
+<h2 id="moon-buggy"><a href="#moon-buggy" class="headerlink" title="moon-buggy"></a>moon-buggy</h2><p><code>brew install moon-buggy</code><br><img src="/2018/03/26/Mac下好玩的终端命令/moon-buggy.jpg" alt="moon-buggy"></p>
 ]]></content>
       
         <categories>
@@ -165,9 +159,9 @@
         
         <tags>
             
-            <tag> CSS </tag>
-            
             <tag> JS </tag>
+            
+            <tag> CSS </tag>
             
             <tag> HTML </tag>
             
@@ -2524,9 +2518,9 @@
         
         <tags>
             
-            <tag> 前端 </tag>
-            
             <tag> IFE </tag>
+            
+            <tag> 前端 </tag>
             
             <tag> JS </tag>
             
@@ -2559,9 +2553,9 @@
         
         <tags>
             
-            <tag> 前端 </tag>
-            
             <tag> IFE </tag>
+            
+            <tag> 前端 </tag>
             
             <tag> CSS </tag>
             
@@ -2622,9 +2616,9 @@
         
         <tags>
             
-            <tag> 前端 </tag>
-            
             <tag> IFE </tag>
+            
+            <tag> 前端 </tag>
             
             <tag> CSS </tag>
             
@@ -2747,11 +2741,11 @@
         
         <tags>
             
+            <tag> IFE </tag>
+            
             <tag> 前端 </tag>
             
             <tag> demo </tag>
-            
-            <tag> IFE </tag>
             
             <tag> code </tag>
             
@@ -2803,11 +2797,11 @@
         
         <tags>
             
+            <tag> IFE </tag>
+            
             <tag> 前端 </tag>
             
             <tag> demo </tag>
-            
-            <tag> IFE </tag>
             
         </tags>
         
@@ -2847,11 +2841,11 @@
         
         <tags>
             
-            <tag> FCC </tag>
-            
             <tag> 前端 </tag>
             
             <tag> demo </tag>
+            
+            <tag> FCC </tag>
             
         </tags>
         
@@ -2942,9 +2936,9 @@
         
         <tags>
             
-            <tag> 前端 </tag>
-            
             <tag> IFE </tag>
+            
+            <tag> 前端 </tag>
             
         </tags>
         
