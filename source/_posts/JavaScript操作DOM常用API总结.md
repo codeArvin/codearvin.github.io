@@ -3,7 +3,7 @@ title: JavaScript操作DOM常用API总结
 date: 2017-03-28 13:52:23
 tags: [前端, DOM, JS]
 keywords: [前端, DOM, JS]
-categories: 学习记录
+categories: 技术
 description: JavaScript操作DOM常用API
 toc: true
 ---

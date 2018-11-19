@@ -3,7 +3,7 @@ title: IFE糯米学院--有趣的鼠标悬浮模糊效果的实现
 date: 2017-03-22 22:56:52
 tags: [IFE, 前端, CSS]
 keywords: IFE, 前端, CSS
-categories: 学习记录
+categories: 技术
 description: 鼠标悬浮模糊效果的实现和相关知识点的记录
 toc: true
 ---

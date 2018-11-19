@@ -3,7 +3,7 @@ title: Linux学习记录--命令练习
 date: 2017-04-19 22:36:12
 tags: [Linux, 后端]
 keywords: [Linux, 后端]
-categories: 学习记录
+categories: 技术
 description: Linux学习记录--命令练习
 toc: true
 ---

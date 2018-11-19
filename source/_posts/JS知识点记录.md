@@ -3,7 +3,7 @@ title: JS知识点记录
 date: 2017-04-29 21:26:23
 tags: [JS]
 keywords: [JS]
-categories: 学习记录
+categories: 技术
 description: 记录平时遇到的JS的各种知识点
 toc: true
 ---

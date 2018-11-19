@@ -3,7 +3,7 @@ title: Linux学习记录--有趣的linux命令
 date: 2017-04-09 14:21:00
 tags: [Linux, 后端]
 keywords: [Linux, 后端]
-categories: 学习记录
+categories: 技术
 description: Linux学习记录--有趣的linux命令
 toc: true
 ---

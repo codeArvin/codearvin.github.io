@@ -3,7 +3,7 @@ title: IFE学习Tips记录
 date: 2017-03-17 21:20:58
 tags: [IFE, 前端]
 keywords: IFE, 前端
-categories: 学习记录
+categories: 技术
 description: 记录了一些在2017IFE前端学习过程中的一些小知识点
 toc: true
 ---

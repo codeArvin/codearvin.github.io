@@ -1,9 +1,9 @@
 ---
 title: Mac 使用记录
 date: 2017-11-8 00:11:43
-tags: [杂物间]
+tags: [杂谈]
 keywords: [mac]
-categories: 杂物间
+categories: 杂谈
 description: 记录一些平时使用感觉不错的软件和一些Mac使用心得
 toc: true
 ---

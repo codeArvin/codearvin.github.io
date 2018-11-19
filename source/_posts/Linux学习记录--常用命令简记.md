@@ -3,7 +3,7 @@ title: Linux学习记录--常用命令简记
 date: 2017-03-30 20:39:22
 tags: [Linux, 后端]
 keywords: [Linux, 后端]
-categories: 学习记录
+categories: 技术
 description: Linux学习记录--常用命令简记
 toc: true
 ---

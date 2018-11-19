@@ -3,7 +3,7 @@ title: Mac下好玩的终端命令
 date: 2018-03-26 21:22:12
 tags: [mac]
 keywords: [mac]
-categories: 杂物间
+categories: 杂谈
 description: Mac下好玩的终端命令
 toc: true
 ---

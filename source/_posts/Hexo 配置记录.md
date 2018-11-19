@@ -3,7 +3,7 @@ title: Hexo 配置记录
 date: 2017-10:30 12:10:11
 tags: [hexo]
 keywords: [hexo]
-categories: 学习记录
+categories: 技术
 description: Hexo功能配置的记录
 toc: true
 ---

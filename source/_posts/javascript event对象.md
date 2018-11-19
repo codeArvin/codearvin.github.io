@@ -3,7 +3,7 @@ title: javascript event对象
 date: 2017-03-23 20:46:45
 tags: [IFE, 前端, JS]
 keywords: IFE, 前端, JS
-categories: 学习记录
+categories: 技术
 description: 对JavaScript中event对象属性的解释
 toc: true
 ---

@@ -3,7 +3,7 @@ title: IFE学习 demo
 date: 2017-03-18 23:13:45
 tags: [IFE, 前端, demo]
 keywords: IFE, 前端, demo
-categories: Show
+categories: 技术
 description: 2017IFE前端学习写的小DEMO
 toc: true
 ---

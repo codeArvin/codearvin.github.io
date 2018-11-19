@@ -3,7 +3,7 @@ title: life-game
 date: 2017-09-20 07:29:54
 tags: [前端]
 keywords: [前端]
-categories: 学习记录
+categories: 技术
 description: life-game
 toc: true
 ---

@@ -3,7 +3,7 @@ title: Atom记录
 date: 2017-05-08 22:45:22
 tags: [Atom]
 keywords: [Atom]
-categories: 学习记录
+categories: 技术
 description: Atom快捷键和插件记录
 toc: true
 ---

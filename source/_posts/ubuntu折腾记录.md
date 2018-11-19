@@ -3,7 +3,7 @@ title: ubuntu折腾记录
 date: 2017-05-05 8:42:55
 tags: [Linux]
 keywords: [Linux]
-categories: 学习记录
+categories: 技术
 description: 记录ubuntu使用过程中遇到的问题和各种折腾
 toc: true
 ---

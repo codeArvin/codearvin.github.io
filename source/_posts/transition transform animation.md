@@ -3,7 +3,7 @@ title: transition transform animation
 date: 2017-03-22 21:03:13
 tags: [IFE, 前端, CSS]
 keywords: IFE, 前端, CSS
-categories: 学习记录
+categories: 技术
 description: 对CSS中transition transform animation几个属性的理解
 toc: true
 ---

@@ -3,7 +3,7 @@ title: 对DOM中offsetWidth等几个属性的理解
 date: 2017-03-21 17:46:12
 tags: [前端, DOM]
 keywords: [前端, DOM]
-categories: 学习记录
+categories: 技术
 description: 对事件捕获进行介绍，并对几个概念进行理解
 toc: true
 ---

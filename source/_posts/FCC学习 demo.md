@@ -3,7 +3,7 @@ title: FCC学习 demo
 date: 2017-03-18 23:00:40
 tags: [FCC, 前端, demo]
 keywords: FCC, 前端, demo
-categories: Show
+categories: 技术
 description: 在FCC学习时写的一些小DEMO
 toc: true
 ---
